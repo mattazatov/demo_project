@@ -11,7 +11,8 @@ SELECT
     pc.Name AS CategoryName,
     COALESCE(parent.Name, 'Uncategorized') AS ParentCategoryName,
     pm.Name AS ModelName,
-    pmd.Description AS ModelDescription
+    pmd.Description AS ModelDescription,
+    1 as test
 FROM SalesLT.Product p
 INNER JOIN SalesLT.ProductCategory pc
     ON p.ProductCategoryID = pc.ProductCategoryID
