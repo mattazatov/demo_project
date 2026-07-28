@@ -1,0 +1,8 @@
+# 1. Global fallback owner for everything
+* @global-lead-user
+
+# 2. Match all JavaScript files anywhere in the repo
+*.js @frontend-team
+
+# 3. Match a specific directory (must end with a slash)
+/views/ @mattazatov
